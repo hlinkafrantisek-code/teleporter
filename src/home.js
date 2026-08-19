@@ -193,7 +193,7 @@ function Home() {
               lineNumber: 79,
               columnNumber: 59
             }, this),
-            "Anywhere.",
+            "Anywhere",
             /* @__PURE__ */ jsxDEV("span", { className: "grad-text", children: "." }, void 0, false, {
               fileName: "<stdin>",
               lineNumber: 80,
