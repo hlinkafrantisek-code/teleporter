@@ -37,6 +37,14 @@ function Reveal({ children, className = "", delay = 0, as: Tag = "div" }) {
     columnNumber: 5
   }, this);
 }
+function PortalMark({ className = "" }) {
+  return /* @__PURE__ */ jsxDEV("svg", { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", className: `h-5 w-5 ${className}`, "aria-hidden": "true", children: [
+    /* @__PURE__ */ jsxDEV("path", { d: "M8 4.5 4.5 8v8L8 19.5" }, void 0, false, { fileName: "<stdin>", lineNumber: 53, columnNumber: 5 }, this),
+    /* @__PURE__ */ jsxDEV("path", { d: "M16 4.5 19.5 8v8L16 19.5" }, void 0, false, { fileName: "<stdin>", lineNumber: 54, columnNumber: 5 }, this),
+    /* @__PURE__ */ jsxDEV("path", { d: "M9 7.5h6v9H9z" }, void 0, false, { fileName: "<stdin>", lineNumber: 55, columnNumber: 5 }, this),
+    /* @__PURE__ */ jsxDEV("path", { d: "M10.5 12h3" }, void 0, false, { fileName: "<stdin>", lineNumber: 56, columnNumber: 5 }, this)
+  ] }, void 0, true, { fileName: "<stdin>", lineNumber: 52, columnNumber: 3 }, this);
+}
 function Navbar({ active = "index.html" }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -83,7 +91,7 @@ function Navbar({ active = "index.html" }) {
                 },
                 this
               ),
-              /* @__PURE__ */ jsxDEV("span", { className: "relative text-sm font-black", children: "TP" }, void 0, false, {
+              /* @__PURE__ */ jsxDEV(PortalMark, { className: "relative text-white" }, void 0, false, {
                 fileName: "<stdin>",
                 lineNumber: 72,
                 columnNumber: 13
@@ -234,7 +242,7 @@ function Footer({ cols = PAGES }) {
     /* @__PURE__ */ jsxDEV("div", { className: "mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:grid-cols-2 lg:grid-cols-4", children: [
       /* @__PURE__ */ jsxDEV("div", { children: [
         /* @__PURE__ */ jsxDEV("div", { className: "flex items-center gap-2.5", children: [
-          /* @__PURE__ */ jsxDEV("span", { className: "relative grid h-8 w-8 place-items-center rounded-full", style: { background: "var(--grad-brand)" }, children: /* @__PURE__ */ jsxDEV("span", { className: "text-sm font-black text-[#0a0b1a]", children: "TP" }, void 0, false, {
+          /* @__PURE__ */ jsxDEV("span", { className: "relative grid h-8 w-8 place-items-center rounded-full", style: { background: "var(--grad-brand)" }, children: /* @__PURE__ */ jsxDEV(PortalMark, { className: "h-[18px] w-[18px] text-[#0a0b1a]" }, void 0, false, {
             fileName: "<stdin>",
             lineNumber: 136,
             columnNumber: 15
